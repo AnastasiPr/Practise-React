@@ -2,6 +2,7 @@
   "name": "my-app",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://anastasipr.github.io/Practise-React/",
   "dependencies": {
     "@chakra-ui/react": "^2.2.1",
     "@emotion/react": "11",
