@@ -1,4 +1,5 @@
 import { extendTheme } from "@chakra-ui/react";
+
 const breakpoints = {
   sm: "30em",
   md: "48em",
@@ -11,6 +12,8 @@ const sizes = {
     max: "max-content",
     min: "min-content",
     full: "100%",
+    "5xs": "4rem",
+    "4xs": "8rem",
     "3xs": "14rem",
     "2xs": "16rem",
     xs: "20rem",
@@ -35,8 +38,10 @@ const sizes = {
 };
 
 const theme = extendTheme({
+  //как начертание сделать человеческое
   fonts: {
-    body: "Menlo, monospace",
+    heading: `'Montserrat', sans-serif`,
+    body: `'Montserrat', sans-serif`,
   },
   breakpoints,
   sizes,

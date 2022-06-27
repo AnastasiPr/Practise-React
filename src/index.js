@@ -10,8 +10,10 @@ import {
   Heading,
   Spacer,
   Box,
+  Link,
 } from "@chakra-ui/react";
 import theme from "./theme.js";
+import "@fontsource/montserrat/300.css";
 
 import { Button, ButtonGroup } from "@chakra-ui/react";
 import { IconButton } from "@chakra-ui/react";
@@ -25,50 +27,84 @@ import { Stack, HStack, VStack } from "@chakra-ui/react";
 
 function Practise() {
   return (
-    <Container w="100%" mw="100%" bg="#44455C">
-      <Flex h="130px" minWidth="max-content" alignItems="center" gap="2">
-        <Flex w="1000px" direction="column" align="center">
-          <Heading fontSize="6xl" fontStyle="body">
+    <Container
+      maxW={["100%", "100%", "100%", "100%", "100%", "100%"]}
+      maxH={["100%", "100%", "100%", "100%", "100%", "100%"]}
+      bg="#44455C"
+      margin="0"
+      height={["100%", "100%", "100%", "100%", "100%", "100%"]}
+    >
+      <Flex height="15rem" minWidth="max-content" alignItems="center" gap="2">
+        <Flex
+          width="5xl"
+          flexDirection={[
+            "column",
+            "column",
+            "column",
+            "column",
+            "column",
+            "column",
+          ]}
+          align="center"
+        >
+          <Heading color="#E9E4BB" fontSize="8xl" fontStyle="body">
             Веб-дизайнер
           </Heading>
         </Flex>
-        <Flex w="700px" direction="column" align="flex-end">
-          <IconButton boxSize="108px" target="_blank" variant="unstyled">
+        <Flex height="2xs" width="3xl" direction="column" align="flex-end">
+          <IconButton boxSize="3xs" target="_blank" variant="unstyled">
             <Img src={telegram} alt="Telegram" />
           </IconButton>
         </Flex>
       </Flex>
-      <Flex h="50px" w="700px" direction="column" align="flex-end">
-        <Text fontSize="xs">Анастасия</Text>
+      <Flex h="5xs" width="51rem" direction="column" align="flex-end">
+        <Text color="#E9E4BB" fontSize="2xl">
+          Анастасия
+        </Text>
       </Flex>
-      <Flex h="150px" w="900px" direction="column" align="flex-end">
-        <Text fontStyle="body">
+      <Flex height="5xs" width="68rem" direction="column" align="flex-end">
+        <Text color="#E9E4BB" fontStyle="body" fontSize="2xl">
           <br />
           Занимаюсь разработкой дизайнов
           <br />
           для сайтов. Креативные решения
           <br />
-          для вашего бизнеса!"
+          для вашего бизнеса!
           <br />
         </Text>
       </Flex>
-      <Flex w="100%" direction="row" align="center" bg="#44455C">
+      <Flex
+        height="xl"
+        width="100%"
+        direction="row"
+        align="center"
+        gap="200"
+        padding="3rem"
+      >
         <Flex direction="column" align="center">
-          <Img src={amster} alt="Telegram" />
-          <IconButton target="_blank" variant="unstyled">
-            <Img src={watch} alt="Посмотреть" />
+          <Img height="md" src={amster} alt="Telegram" />
+          <Flex>
+            <IconButton height="3rem" target="_blank" variant="unstyled">
+              <Link href="https://www.behance.net/anastesha">
+                <Img src={watch} alt="Посмотреть" />
+              </Link>
+            </IconButton>
+          </Flex>
+        </Flex>
+        <Flex direction="column" align="center">
+          <Img height="md" src={core} alt="Telegram" />
+          <IconButton height="3rem" target="_blank" variant="unstyled">
+            <Link href="https://www.behance.net/gallery/142492537/dizajn-koncepcija-estetiki-%28CORE%29">
+              <Img src={watch} alt="Посмотреть" />
+            </Link>
           </IconButton>
         </Flex>
         <Flex direction="column" align="center">
-          <Img src={core} alt="Telegram" />
-          <IconButton target="_blank" variant="unstyled">
-            <Img src={watch} alt="Посмотреть" />
-          </IconButton>
-        </Flex>
-        <Flex direction="column" align="center">
-          <Img src={garage} alt="Telegram" />
-          <IconButton target="_blank" variant="unstyled">
-            <Img src={watch} alt="Посмотреть" />
+          <Img height="md" src={garage} alt="Telegram" />
+          <IconButton height="3rem" target="_blank" variant="unstyled">
+            <Link href="https://www.behance.net/anastesha">
+              <Img src={watch} alt="Посмотреть" />
+            </Link>
           </IconButton>
         </Flex>
       </Flex>
