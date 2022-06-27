@@ -2,113 +2,106 @@ import React from "react";
 import ReactDOM from "react-dom/client";
 import {
   ChakraProvider,
-  Container,
-  Flex,
-  Center,
   Img,
   Text,
   Heading,
   Spacer,
-  Box,
-  Link,
+  IconButton,
+  Stack,
 } from "@chakra-ui/react";
 import theme from "./theme.js";
+
+// Components
+import Case from "./components/Case.js";
+
+// Fonts
 import "@fontsource/montserrat/300.css";
 
-import { Button, ButtonGroup } from "@chakra-ui/react";
-import { IconButton } from "@chakra-ui/react";
-import telegram from "./images/Telegram.svg";
+// Imgs
 import amster from "./images/Амстердам.svg";
 import core from "./images/Core.svg";
 import garage from "./images/Garage.svg";
-import watch from "./images/Посмотреть.svg";
-import { Grid, GridItem } from "@chakra-ui/react";
-import { Stack, HStack, VStack } from "@chakra-ui/react";
+import telegram from "./images/Telegram.svg";
 
 function Practise() {
+  const photo = [
+    { img: amster, link: "https://www.behance.net/anastesha" },
+    {
+      img: core,
+      link: "https://www.behance.net/gallery/142492537/dizajn-koncepcija-estetiki-%28CORE%29",
+    },
+    { img: garage, link: "https://www.behance.net/anastesha" },
+  ];
   return (
-    <Container
-      maxW={["100%", "100%", "100%", "100%", "100%", "100%"]}
-      maxH={["100%", "100%", "100%", "100%", "100%", "100%"]}
-      bg="#44455C"
-      margin="0"
-      height={["100%", "100%", "100%", "100%", "100%", "100%"]}
-    >
-      <Flex height="15rem" minWidth="max-content" alignItems="center" gap="2">
-        <Flex
-          width="5xl"
-          flexDirection={[
-            "column",
-            "column",
-            "column",
-            "column",
-            "column",
-            "column",
-          ]}
-          align="center"
+    <Stack minH="100vh" style={{ backgroundColor: "#44455C" }}>
+      <Stack
+        direction="row"
+        align="start"
+        marginX={{ base: "1em", lg: "3em" }}
+        pt="1em"
+      >
+        <Heading
+          color="#E9E4BB"
+          size={{ base: "xl", lg: "4xl" }}
+          fontWeight="300"
+          fontStyle="body"
+          pt="1em"
         >
-          <Heading color="#E9E4BB" fontSize="8xl" fontStyle="body">
-            Веб-дизайнер
-          </Heading>
-        </Flex>
-        <Flex height="2xs" width="3xl" direction="column" align="flex-end">
-          <IconButton boxSize="3xs" target="_blank" variant="unstyled">
-            <Img src={telegram} alt="Telegram" />
-          </IconButton>
-        </Flex>
-      </Flex>
-      <Flex h="5xs" width="51rem" direction="column" align="flex-end">
-        <Text color="#E9E4BB" fontSize="2xl">
+          Веб-дизайнер
+        </Heading>
+        <Spacer />
+        <IconButton
+          as="a"
+          href="https://t.me/anasteshha1"
+          target="_blank"
+          variant="unstyled"
+        >
+          <Img
+            boxSize={{ base: "60px", lg: "120px" }}
+            src={telegram}
+            alt="Telegram"
+          />
+        </IconButton>
+      </Stack>
+      <Stack
+        color="#E9E4BB"
+        fontSize={{ base: "xs", lg: "xl" }}
+        // align="center"
+        marginX={{ base: "1em", lg: "3em" }}
+        spacing="1.5em"
+      >
+        <Text pl={["7em", "15em", "17em", "20.5em", "20.5em", "20em"]}>
           Анастасия
         </Text>
-      </Flex>
-      <Flex height="5xs" width="68rem" direction="column" align="flex-end">
-        <Text color="#E9E4BB" fontStyle="body" fontSize="2xl">
-          <br />
-          Занимаюсь разработкой дизайнов
-          <br />
-          для сайтов. Креативные решения
-          <br />
-          для вашего бизнеса!
-          <br />
+        <Spacer />
+        <Text
+          pl={["7em", "15em", "17em", "20.5em", "20.5em", "20em"]}
+          // maxW="42vw"
+          w={["80vw", "80vw", "55vw", "75vw", "55vw", "42vw"]}
+          // w={{ base: "80vw", md: "50vw", lg: "42vw" }}
+          h="10vh"
+        >
+          Занимаюсь разработкой дизайнов для сайтов. Креативные решения для
+          вашего бизнеса!
         </Text>
-      </Flex>
-      <Flex
-        height="xl"
-        width="100%"
-        direction="row"
-        align="center"
-        gap="200"
-        padding="3rem"
-      >
-        <Flex direction="column" align="center">
-          <Img height="md" src={amster} alt="Telegram" />
-          <Flex>
-            <IconButton height="3rem" target="_blank" variant="unstyled">
-              <Link href="https://www.behance.net/anastesha">
-                <Img src={watch} alt="Посмотреть" />
-              </Link>
-            </IconButton>
-          </Flex>
-        </Flex>
-        <Flex direction="column" align="center">
-          <Img height="md" src={core} alt="Telegram" />
-          <IconButton height="3rem" target="_blank" variant="unstyled">
-            <Link href="https://www.behance.net/gallery/142492537/dizajn-koncepcija-estetiki-%28CORE%29">
-              <Img src={watch} alt="Посмотреть" />
-            </Link>
-          </IconButton>
-        </Flex>
-        <Flex direction="column" align="center">
-          <Img height="md" src={garage} alt="Telegram" />
-          <IconButton height="3rem" target="_blank" variant="unstyled">
-            <Link href="https://www.behance.net/anastesha">
-              <Img src={watch} alt="Посмотреть" />
-            </Link>
-          </IconButton>
-        </Flex>
-      </Flex>
-    </Container>
+      </Stack>
+
+      <Stack>
+        <Stack
+          pt="5em"
+          marginX={{ base: "1em", lg: "3em" }}
+          direction={{ base: "column", lg: "row" }}
+          // spacing={{ base: "1em", lg: "20em" }}
+          // align="center"
+          justifyContent="space-around"
+        >
+          {photo.map((e) => (
+            <Case photo={e.img} key={e} link={e.link} />
+          ))}
+          {/* <Spacer /> */}
+        </Stack>
+      </Stack>
+    </Stack>
   );
 }
 
