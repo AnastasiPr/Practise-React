@@ -1,23 +1,23 @@
 {
   "files": {
-    "main.css": "/Practise-React/static/css/main.63b6f230.css",
-    "main.js": "/Practise-React/static/js/main.a97061f0.js",
+    "main.css": "/Practise-React/static/css/main.5691ea06.css",
+    "main.js": "/Practise-React/static/js/main.de04fcbf.js",
     "static/media/Core.svg": "/Practise-React/static/media/Core.32ab424f94b3fa70ee8ebbd9f14a5912.svg",
     "static/media/Амстердам.svg": "/Practise-React/static/media/Амстердам.433122470ed28f6b832248391409219b.svg",
     "static/media/Garage.svg": "/Practise-React/static/media/Garage.b4fd17161c92ded26df005677b337fbd.svg",
-    "static/media/montserrat-all-300-normal.woff": "/Practise-React/static/media/montserrat-all-300-normal.063b2f60c12ee6124250.woff",
-    "static/media/montserrat-latin-300-normal.woff2": "/Practise-React/static/media/montserrat-latin-300-normal.9d9b4145531fe613a73f.woff2",
-    "static/media/montserrat-latin-ext-300-normal.woff2": "/Practise-React/static/media/montserrat-latin-ext-300-normal.26abb73e25045cc1beb8.woff2",
-    "static/media/montserrat-cyrillic-ext-300-normal.woff2": "/Practise-React/static/media/montserrat-cyrillic-ext-300-normal.fb92c4f9502bde2fcac5.woff2",
-    "static/media/montserrat-cyrillic-300-normal.woff2": "/Practise-React/static/media/montserrat-cyrillic-300-normal.cb9a61a0cb9dd19c7c8d.woff2",
+    "static/media/montserrat-all-300-normal.woff": "/Practise-React/static/media/montserrat-all-300-normal.cb25782d576cc4b35601.woff",
+    "static/media/montserrat-latin-300-normal.woff2": "/Practise-React/static/media/montserrat-latin-300-normal.0cc3e06704117dcfc367.woff2",
+    "static/media/montserrat-latin-ext-300-normal.woff2": "/Practise-React/static/media/montserrat-latin-ext-300-normal.7f5dee6c782fd4ff0e9c.woff2",
+    "static/media/montserrat-cyrillic-ext-300-normal.woff2": "/Practise-React/static/media/montserrat-cyrillic-ext-300-normal.6091a5d41e290c8af528.woff2",
+    "static/media/montserrat-cyrillic-300-normal.woff2": "/Practise-React/static/media/montserrat-cyrillic-300-normal.8a381d078cd679f5a017.woff2",
     "static/media/Telegram.svg": "/Practise-React/static/media/Telegram.e8a4f68b59f7271af3c0f1183178b5a6.svg",
-    "static/media/montserrat-vietnamese-300-normal.woff2": "/Practise-React/static/media/montserrat-vietnamese-300-normal.84ed61be78a90c0b207a.woff2",
+    "static/media/montserrat-vietnamese-300-normal.woff2": "/Practise-React/static/media/montserrat-vietnamese-300-normal.260b5062c37e2f23cb52.woff2",
     "index.html": "/Practise-React/index.html",
-    "main.63b6f230.css.map": "/Practise-React/static/css/main.63b6f230.css.map",
-    "main.a97061f0.js.map": "/Practise-React/static/js/main.a97061f0.js.map"
+    "main.5691ea06.css.map": "/Practise-React/static/css/main.5691ea06.css.map",
+    "main.de04fcbf.js.map": "/Practise-React/static/js/main.de04fcbf.js.map"
   },
   "entrypoints": [
-    "static/css/main.63b6f230.css",
-    "static/js/main.a97061f0.js"
+    "static/css/main.5691ea06.css",
+    "static/js/main.de04fcbf.js"
   ]
 }
